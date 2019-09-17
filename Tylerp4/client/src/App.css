@@ -41,6 +41,7 @@ body {
   justify-content: center;
   font-size: 1.2em;
   animation: 1s ease-out 0s 1 slideInFromLeft;
+  font-size: 25px
   
 }
 

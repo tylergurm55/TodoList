@@ -34,7 +34,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tylergurm55/TodoList"
+    "url": "git+https://github.com/tylergurm55/TodoList.git"
   },
   "author": "",
   "license": "ISC",
