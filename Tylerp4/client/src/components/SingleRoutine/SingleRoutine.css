@@ -1,0 +1,24 @@
+.single-routine {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    font-size: 30px;
+    padding: 20px;
+    background-color:rgba(54, 13, 238, 0.2);
+    font-family: 'Times New Roman', Times, serif
+}
+
+.update-button {
+    margin-top: 30px;
+    font-size: 20px;
+    padding: 10px;
+    background-color: black;
+    color: white
+}
+.delete-button {
+    margin-top: 30px;
+    font-size: 20px;
+    background-color: rgb(235, 14, 14);
+    padding: 10px;
+    color: white;
+}

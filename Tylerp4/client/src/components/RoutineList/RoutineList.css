@@ -1,0 +1,42 @@
+.peoples-list {
+    display: flex;
+    justify-content: center;
+    align-items: column;
+    color: rgb(20, 2, 2);
+    border:2px solid rgba(0, 0, 0, 0.856);
+    padding-left: 0px;
+    margin-top: 80px;
+    background-color: rgb(209, 12, 12);
+    border-radius:28px;
+}
+
+.peoples-list > ol {
+    padding-left: 0px;
+}
+
+
+
+  .create-routine-button {
+
+        background-color: red;
+        -moz-border-radius:28px;
+        -webkit-border-radius:28px;
+        border-radius:28px;
+        border:2px solid rgba(0, 0, 0, 0.856);
+        display:inline-block;
+        cursor:pointer;
+        color:#ffffff;
+        font-family:Arial;
+        font-size:17px;
+        padding:16px 31px;
+        margin: 20px;
+        text-decoration:none;
+        
+    }
+ .button-div {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+ }
+
