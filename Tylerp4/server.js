@@ -47,14 +47,14 @@ app.get('/', async (request, response) => {
 
 // In production, any request that doesn't match a previous route
 // should send the front-end application, which will handle the route.
+app.use((err, req, res, next) => {
+  res.status(500).json({ message: err.message})
+})
 if (process.env.NODE_ENV == "production") {
   app.use('*', (req, res) => res.sendFile(path.join(__dirname, './client/build', "index.html")));
 }
 
 
-app.use((err, req, res, next) => {
-  res.status(500).json({ message: err.message})
-})
 
 
 
