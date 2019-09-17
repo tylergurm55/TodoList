@@ -9,21 +9,21 @@ const bcrypt = require('bcrypt')
 //   dialect: 'postgres'
 // })
 let db
-if (process.env.NODE_ENV === 'production') {
+// if (process.env.NODE_ENV === 'production') {
   // If the node environment is production, connect to a remote PSQL database
    db = new Sequelize(process.env.DATABASE_URL , {
     dialect: 'postgres'
   });
-}
-else {
-  console.log("string hi")
-  // Else connect to a local instance of PSQL running on your machine
-   db = new Sequelize({
-    database: 'express',
-    dialect: 'postgres'
-  });
+// }
+// else {
+//   console.log("string hi")
+//   // Else connect to a local instance of PSQL running on your machine
+//    db = new Sequelize({
+//     database: 'express',
+//     dialect: 'postgres'
+//   });
   
-}
+// }
 
 
 
