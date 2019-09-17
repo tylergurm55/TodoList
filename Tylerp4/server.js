@@ -39,7 +39,7 @@ app.use('/app',  /*authorized,*/ appRouter) // to reactive security
 app.use(passport.initialize())
 app.get('/', async (request, response) => {
   try {
-    response.json({message: 'Welcome to Express Auth App!'})
+    response.json({message: 'Welcome to Sport Todo!'})
   } catch (e) {
     response.status(e.status).json({ message: e.status }) 
   }
@@ -50,14 +50,6 @@ app.get('/', async (request, response) => {
 app.use((err, req, res, next) => {
   res.status(500).json({ message: err.message})
 })
-if (process.env.NODE_ENV == "production") {
-  app.use('*', (req, res) => res.sendFile(path.join(__dirname, './client/build', "index.html")));
-}
-
-
-
-
-
 /*
 // Generic error handler
 function errorHandler (err, req, res, next) {
